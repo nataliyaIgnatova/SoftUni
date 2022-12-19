@@ -4,19 +4,20 @@ public class e2PrintNumbersInReverseOrder {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String numbers = scanner.nextLine();
-        String[]  numbersArr = numbers.split(" ");
+        int n = Integer.parseInt(scanner.nextLine());
 
-        int[] newNumberArr = new int[numbersArr.length];
+        int[] numberArr = new int[n];
 
-        for (int i = 0; i < numbersArr.length; i++) {
+        for (int i = 0; i < n; i++) {
+             int currentNum = Integer.parseInt(scanner.next());
 
-           newNumberArr[i] = Integer.parseInt(numbersArr[i]);
+             numberArr[i]=currentNum;
+        }
+        for (int i = numberArr.length-1; i >= 0 ; i--) {
 
-
+            System.out.printf("%d ",numberArr[i]);
 
         }
-        System.out.println();
 
 
     }
