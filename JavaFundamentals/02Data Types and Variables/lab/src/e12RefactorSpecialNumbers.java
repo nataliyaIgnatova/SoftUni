@@ -17,9 +17,9 @@ public class e12RefactorSpecialNumbers {
             }
 
                 if (sum == 5 || sum == 7 || sum == 11){
-                    System.out.printf("True -> %d%n", i);
+                    System.out.printf("%d -> True%n", i);
                 }else {
-                System.out.printf("False -> %d%n",i);
+                System.out.printf("%d -> False%n",i);
                 }
         }
 
