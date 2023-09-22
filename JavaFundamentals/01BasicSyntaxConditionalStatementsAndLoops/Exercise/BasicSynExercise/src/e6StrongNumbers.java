@@ -6,13 +6,14 @@ public enum e6StrongNumbers {;
             int n = Integer.parseInt(scanner.nextLine());
             int startNumber = n;
             int currantNumber = 0;
-            int factorialNumber = 1;
+
             int sumFactorial = 0;
 
 
             while ( n > 0){
 
                 currantNumber = n % 10;
+                int factorialNumber = 1;
 
                 for (int i = 1; i <= currantNumber ; i++) {
 

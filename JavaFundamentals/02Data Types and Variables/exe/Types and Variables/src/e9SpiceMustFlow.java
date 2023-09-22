@@ -14,9 +14,11 @@ public class e9SpiceMustFlow {
 
         for (int sum = yieldStartingSource; sum >= 100 ; sum -= 10) {
 
-            daysCount++;
+
             int sumWorkers = sum - 26;
             spiceExtracted +=sumWorkers  ;
+            daysCount++;
+
         }
         System.out.println(daysCount);
         System.out.printf("%d", spiceExtracted - 26);
