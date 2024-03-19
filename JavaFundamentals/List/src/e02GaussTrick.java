@@ -16,17 +16,17 @@ public class e02GaussTrick {
         for (int i = 0; i < numbers.size()/2 ; i++) {
 
             numbers.set(i,(numbers.get(i) + numbers.get(numbers.size()-1)));
-            numbers.remove(numbers.size()-1);
-
-        }
-
-
-        for (int number: numbers) {
-
-            System.out.print(number + " ");
+           
+             System.out.print(numbers.get(i) + " ");
 
 
         }
+
+              if(numbers.size() % 2 != 0){
+                     System.out.print(numbers.get(numbers.size()/2));                    
+             }
+
+
     }
 
 
